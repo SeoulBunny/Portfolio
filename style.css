@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  width: 75%;
+  border-radius: 25px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Add margin-top to move the image down by 10 pixels */
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.portfolio,
+.about {
+  max-width: 45%;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+
+
