@@ -14,15 +14,94 @@
             <p>Web Developer</p>
         </header>
 
-        <div class="main-content">
-          <img class="portrait" src="./Features/Portrait.jpg" alt="Your Portrait">
-          <p>Welcome to my portfolio website. I am a passionate web developer...</p>
-      </div>
+        <div class="picture" id="picture-container">
+          <img id="portrait" src="./Features/Transparant profile.png" alt="Your Portrait">
+          <p id="portrait-text" class="text-content">
+              Hi. I'm Joe. <br><br> I am currently living in South <br> Korea, 
+              working as a university professor, but I have spent the lat 
+              12 years living in countries such as Thailand, Japan, Vietnam,
+               and of course, England. I started life as an artist after graduating 
+               from Central Saint Martin's college, London, but soon fell in love 
+               with travelling. Since then, I have worked as an English teacher. 
+               Now, I am a trained linguist with an intrest in semiotics. A 
+               combination of my skills and experieces so far led me to begin 
+               this web-development journey, and I believe they will offer 
+               both you and I the opportunity to create exciting, unique things
+                together.
+          </p>
+          </div>
+          <div class="welcome">
+            <p>Welcome to my portfolio website. I am a passionate web developer...</p>
+          </div>
 
-      <div class="info">
-          <img class="portfolio" src="./Features/Portfolio.jpg" alt="Portfolio Image">
-          <img class="about" src="./Features/About me.jpg" alt="About Me Image">
+      
+
+
+
+    <div class="slideshow">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="./Features/Portfolio.jpg" style="width:100%">
       </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="./Images/website-design-list_21.webp" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="./Images/website-design-list_22.webp" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="./Images/website-design-list_30.webp" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="./Images/website-design-list_32.webp" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="./Images/website-design-list_8.webp" style="width:100%">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src=".//Features/Portfolio.jpg" style="width:100%" onclick="currentSlide(1)" alt="My portfolio">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src=".//Images/website-design-list_21.webp" style="width:100%" onclick="currentSlide(2)" alt="This one isn't mine">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src=".//Images/website-design-list_22.webp" style="width:100%" onclick="currentSlide(3)" alt="Neither is this!">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src=".//Images/website-design-list_30.webp" style="width:100%" onclick="currentSlide(4)" alt="I didn't make this one">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src=".//Images/website-design-list_32.webp" style="width:100%" onclick="currentSlide(5)" alt="or this one">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src=".//Images/website-design-list_8.webp" style="width:100%" onclick="currentSlide(6)" alt="Actually, none of them are mine. Ha ha.">
+        </div>
+      </div>
+    </div>
 
         <footer>
             <p>Contact me at: globaljoe4@gmail.com</p>

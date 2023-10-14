@@ -18,7 +18,7 @@ header {
   background-color: #333;
   color: #fff;
   padding: 10px;
-  width: 75%;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -30,23 +30,57 @@ header h1 {
   margin-top: 20px;
 }
 
+
+
+#picture-container {
+  position: relative;
+  width: 275px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+}
+
+#portrait, #portrait-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#portrait {
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+#portrait-text {
+  display: none;
+  padding: 20px; 
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.text-content {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 50%; /* Make the image circular */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 10px; /* Add margin-top to move the image down by 10 pixels */
+  border-radius: 50%; 
+  box-shadow: 0 0 10px #ffffff;
+  margin-top: 10px; /
+  transition: transform 0.3s ease-in-out;
 }
 
-.info {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
 
-.portfolio,
-.about {
+.portfolio
+{
   max-width: 45%;
+  min-width: 40%;
 }
 
 footer {
@@ -55,5 +89,95 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+.welcome {
+  margin-top: 4%;
+}
 
 
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
